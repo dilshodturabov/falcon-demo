@@ -1,0 +1,660 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+body a {
+    color: #999;
+}
+
+body .row{
+    --bs-gutter-x: 0rem;
+}
+
+/* navbar container */
+
+.container-fluid {
+    padding: 0 20px;
+}
+
+/* navbar  bootstrap*/
+
+.nawbar{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    /* box-shadow: 0 2px 5px black; */
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+/* navbar main */
+
+.navbar-brand {
+    color: #999999 !important;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* nav link */
+.navbar-nav .nav-item .nav-link{
+    margin: 0;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #4f5fce !important;
+}
+
+.active {
+    color: #4f5fce !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 17px !important;
+    font-weight: 700;
+    line-height: 30px;
+    color: #999;
+}
+
+.right-nav{
+    width: 40%;
+}
+
+/* navbar dropdown */
+
+.dropdown-toggle::after {
+    content: "";
+}
+
+.dropdown-item{
+    color:#999;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: inherit;
+    color: rgb(12, 214, 214);
+}
+
+.dropdown-menu{
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0 5px 5px black;
+}
+
+.dropdown-menu[data-bs-popper]{
+    top: 117%;
+}
+
+/*in dropdown */
+
+.click-content {
+    transition: 0.5s;
+    height: 0px;
+    overflow-y: hidden;
+}
+
+.click-content{
+    padding-left: 20px;
+}
+
+.click-content a{
+    text-decoration: none;
+}
+
+.click-content a:hover{
+    color: rgb(12, 214, 214);
+}
+
+.click:hover{
+    cursor: pointer;
+    color: rgb(12, 214, 214);
+}
+.click:hover .click-content {
+    transition: 0.5s;
+    height: 52px;
+    overflow-y: auto;
+}
+
+/* trinity */
+.trinity .container-fluid, .our-stuff .container-fluid, .features .container-fluid{
+    padding: 0 60px;
+}
+
+.trinity ol{
+    padding: 0;
+}
+.trinity ol li{
+    list-style-type: decimal-leading-zero;
+    margin-left: 40px;
+}
+
+.trinity h4.special-text{
+    margin-top: 0;
+}
+.trinity ol h4{
+    margin-top: 18px;
+}
+.trinity ol li:not(:first-child){
+    margin-top: 40px;
+}
+.trinity ol li{
+    color: #08d3e0;
+    font-size: 24px;
+}
+.trinity ol li::marker{
+    display: inline-block;
+    color: #08d3e0;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.trinity h1{
+    color: #4f5fce;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 35px;
+}
+
+.trinity img{
+    margin-bottom: 52px;
+}
+
+.trinity h4{
+    margin-top: 35px;
+    color: #999999;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 33px;
+}
+
+.specialBtn{
+    background-color: #fbcd13;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 50px !important;
+    transition: .5s;
+}
+
+.specialBtn:hover{
+    color: #fff;
+    background-color: #08d3e0;
+    transition: .5s;
+}
+
+.trinity .primary-text{
+    margin-top: 40px;
+}
+
+.trinity .primary-text h3{
+    color: #08d3e0;
+    font-size: 20px;
+}
+
+/* Our Staff */
+.our-stuff{
+    background-color:#08d3e0;
+    margin-top: 100px;
+    padding: 90px 0 100px 0;
+}
+
+.our-stuff h1{
+    text-align:center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+}
+
+.our-stuff h4{
+    margin: 52px 0 18px 0;
+    color: #fff;
+}
+
+.our-stuff h5{
+    color: #fff;
+    line-height: 35px;
+}
+/* footer */
+
+/* features */
+.features{
+    padding: 90px 0 100px 0;
+}
+
+.features h1{
+    color:#4f5fce;
+    font-size: 37px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.features .details{
+    margin-top: 43px;
+}
+
+.features .details h4{
+    margin-bottom: 10px;
+    color: #08d3e0;
+}
+
+.features .details i{
+    color: #08d3e0;
+}
+
+.features .details h5{
+    color: #999;
+    line-height: 38px;
+}
+
+footer{
+    background-color: #4f5fce;
+    color: #fff;
+    padding-top: 95px;
+    padding-bottom: 90px;
+}
+
+footer h4{
+    font-size: 29px;
+    font-weight: 700;
+}
+
+footer h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 38px;
+    cursor:pointer;
+}
+footer h1 a{
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+footer a:hover{
+    transition: 0.5s;
+    color:#08d3e0;
+}
+
+footer p{
+    color: #08d3e0;
+    margin-top:12px;
+    font-size: 23px;
+}
+
+footer .icons{
+    margin-top: 48px;
+}
+footer .icons a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+footer .icons a:not(:first-child){
+    margin-left: 30px;
+}
+footer .icons a:hover{
+    color: #08d3e0;
+}
+
+footer h6{
+    margin-top: 53px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+footer h6 a{
+    text-decoration: none;
+    color: #fff;
+}
+footer h6 a:hover{
+    color: #fff;
+    text-decoration:underline;
+}
+
+
+
+
+/* media 1024 < 1440 */
+@media(min-width:1024px) and (max-width:1440px){
+    .right-nav{
+        width: 50%;
+    }
+
+    .trinity h1{
+        line-height: 30px;
+    }
+
+    .bg-primary-variant-2 h2{
+        font-size: 80px;
+        margin-top: 50px;
+    }
+
+    .features .details i{
+        font-size: 60px;
+    }
+
+    /* rubber */
+    
+
+    /* footer */
+    footer h4{
+        font-size: 25px;
+    }
+
+    footer h1{
+        font-size: 25px;
+    }
+}
+
+/* tablet device */
+@media(min-width:768px) and (max-width:1023px){
+    .trinity .container-fluid{
+        padding: 0 15px;
+    }
+
+    .trinity h1{
+        line-height: 30px;
+    }
+
+    .trinity ol li{
+        font-size: 20px;
+    }
+
+    .trinity ol li::marker{
+        font-size: 20px;
+    }
+
+    .trinity h4{
+        font-size: 20px;
+    }
+
+    .trinity h4.special-text{
+        font-size: 20px;
+    }
+
+    .our-stuff .container-fluid{
+        padding: 0 15px;
+    }
+
+    .our-stuff h4{
+        text-align: center;
+    }
+
+    .our-stuff h5{
+        line-height: 25px;
+        font-size: 18px;
+        text-align:center;
+    }
+
+    .features .container-fluid{
+        padding: 0 15px;
+    }
+
+    .features h1{
+        font-size: 24px;
+    }
+
+    .features .details i{
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+    /* .ourHistory  */
+
+     /* footer */
+    footer h4{
+        font-size: 25px;
+    }
+
+    footer h1{
+        font-size: 25px;
+    }
+}
+
+/* mobile device */
+@media(min-width:425px) and (max-width: 767px){
+    .trinity .container-fluid{
+        padding: 0 15px;
+    }
+
+    .trinity h1{
+        text-align:center;
+    }
+
+    .trinity h4.special-text, .trinity h4{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .our-stuff h5, .our-stuff h4{
+        text-align: center;
+    }
+
+    .features .container-fluid{
+        padding: 0 15px;
+    }
+
+    .features h1{
+        font-size: 32px;
+    }
+
+    .features .details i{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .features .details h4{
+        font-size: 24px;
+    }
+
+    .features .details h5{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .features .center-img .col-12:first-child{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .features .center-img h5, .features .center-img h4{
+        text-align: center;
+    }
+
+    footer h4, footer h1{
+        font-size: 24px;
+    }
+
+    footer h1{
+        margin-top: 35px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+    footer h6{
+        font-size: 14px;
+    }
+
+    footer .icons a{
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 375px) and (max-width: 424px){
+    .trinity .container-fluid, .our-stuff .container-fluid, .features .container-fluid{
+        padding: 0 5px;
+    }
+
+    .trinity h1{
+        text-align:center;
+    }
+
+    .trinity h4.special-text, .trinity h4{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .our-stuff h1{
+        font-size: 32px;
+    }
+
+    .our-stuff h5, .our-stuff h4{
+        text-align: center;
+    }
+
+    .features .container-fluid{
+        padding: 0 15px;
+    }
+
+    .features h1{
+        font-size: 32px;
+    }
+
+    .features .details i{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .features .details h4{
+        font-size: 24px;
+    }
+
+    .features .details h5{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .features .center-img .col-12:first-child{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .features .center-img h5, .features .center-img h4{
+        text-align: center;
+    }
+
+    footer{
+        padding: 90px 15px;
+    }
+
+    footer h4, footer h1{
+        font-size: 20px;
+    }
+
+    footer h1{
+        margin-top: 30px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+    footer h6{
+        font-size: 12px;
+    }
+
+    footer .icons a{
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 374px){
+    .trinity .container-fluid, .our-stuff .container-fluid, .features .container-fluid{
+        padding: 0 5px;
+    }
+
+    .trinity h1{
+        text-align:center;
+        line-height: 25px;
+    }
+
+    .trinity h4.special-text, .trinity h4{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .our-stuff h1{
+        font-size: 32px;
+    }
+
+    .our-stuff h5, .our-stuff h4{
+        text-align: center;
+    }
+
+    .features .container-fluid{
+        padding: 0 15px;
+    }
+
+    .features h1{
+        font-size: 32px;
+    }
+
+    .features .details i{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .features .details h4{
+        font-size: 24px;
+    }
+
+    .features .details h5{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .features .center-img .col-12:first-child{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .features .center-img h5, .features .center-img h4{
+        text-align: center;
+    }
+
+    footer{
+        padding: 90px 15px;
+    }
+
+    footer h4, footer h1{
+        font-size: 20px;
+    }
+
+    footer h1{
+        margin-top: 30px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+    footer h6{
+        font-size: 12px; 
+    }
+
+    footer .icons a{
+        font-size: 30px;
+    }
+}
